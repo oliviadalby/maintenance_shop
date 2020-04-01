@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Oiltypes:</strong>
+  <%= @maintenance_shop_list.OilTypes %>
+</p>
+
+<p>
+  <strong>Customerrepairs:</strong>
+  <%= @maintenance_shop_list.CustomerRepairs %>
+</p>
+
+<p>
+  <strong>Garages:</strong>
+  <%= @maintenance_shop_list.Garages %>
+</p>
+
+<div id="specials_menu_wrapper">
+ <%= render @specials_menu.todo_items %>
+ <div id="form">
+  <%= render "specials_menu/form" %>
+ </div>
+</div>
+
+<%= link_to 'Edit', edit_maintenance_shop_list_path(@maintenance_shop_list) %> |
+<%= link_to 'Back', maintenance_shop_lists_path %>

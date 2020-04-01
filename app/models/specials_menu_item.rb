@@ -1,0 +1,2 @@
+class SpecialsMenuItem < ApplicationRecord
+end

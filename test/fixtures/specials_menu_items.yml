@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Days: MyString
+  Specials: MyString
+  Location: 1
+
+two:
+  Days: MyString
+  Specials: MyString
+  Location: 1

@@ -1,0 +1,2 @@
+module SpecialsMenuHelper
+end

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Maintenance Shop Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Oiltypes</th>
+      <th>Customerrepairs</th>
+      <th>Garages</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @maintenance_shop_lists.each do |maintenance_shop_list| %>
+      <tr>
+        <td><%= maintenance_shop_list.OilTypes %></td>
+        <td><%= maintenance_shop_list.CustomerRepairs %></td>
+        <td><%= maintenance_shop_list.Garages %></td>
+        <td><%= link_to 'Show', maintenance_shop_list %></td>
+        <td><%= link_to 'Edit', edit_maintenance_shop_list_path(maintenance_shop_list) %></td>
+        <td><%= link_to 'Destroy', maintenance_shop_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Maintenance Shop List', new_maintenance_shop_list_path %>
